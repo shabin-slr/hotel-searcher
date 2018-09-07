@@ -1,0 +1,42 @@
+<div class="container-fliud">
+    <div class="card margin10px padding10px">
+        <div class="card-title">
+            This is hotel list
+        </div>
+        <div class="panel" >
+            {{hotel.name}}
+        </div>
+        
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Name 
+                        <span>
+                            <i class="fas fa-sort" ng-if="$ctrl.sortBy!=='name'" ng-click="$ctrl.sortBy='name'"></i>
+                            <i class="fas fa-sort-up" ng-if="$ctrl.sortBy=='name' && $ctrl.sortReverse == true" ng-click="$ctrl.sortReverse=false"></i>
+                            <i class="fas fa-sort-down" ng-if="$ctrl.sortBy=='name' && $ctrl.sortReverse == false"  ng-click="$ctrl.sortReverse=true"></i>
+                        </span>
+                    </th>
+                    <th scope="col">City</th>
+                    <th scope="col">Price
+                        <span>
+                            <i class="fas fa-sort" ng-if="$ctrl.sortBy!=='price'" ng-click="$ctrl.sortBy='price'"></i>
+                            <i class="fas fa-sort-up" ng-if="$ctrl.sortBy=='price' && $ctrl.sortReverse == true" ng-click="$ctrl.sortReverse=false"></i>
+                            <i class="fas fa-sort-down" ng-if="$ctrl.sortBy=='price' && $ctrl.sortReverse == false"  ng-click="$ctrl.sortReverse=true"></i>
+                        </span>
+                    </th>
+                    <th scope="col">Availabilty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hotel in $ctrl.hotels | orderBy:$ctrl.sortBy:$ctrl.sortReverse">
+                    <th>{{hotel.name}}</th>
+                    <td style="text-transform: capitalize">{{hotel.city}}</td>
+                    <td>{{hotel.price|currency:"$ "}}</td>
+                    <td>@mdo</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+</div>
