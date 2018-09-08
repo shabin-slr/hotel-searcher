@@ -37,7 +37,7 @@ describe("Testing routes", function(){
     });
 
     it('should responds to any other route with 404', function(done) {
-        request.get(base_url+"search", function(error, response, body) {
+        request.get(base_url+"na", function(error, response, body) {
             console.log(body);
             expect(response.statusCode).toBe(404);
             expect(response.headers["content-type"]).toContain("application/json");
