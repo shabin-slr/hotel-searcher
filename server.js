@@ -10,7 +10,9 @@ app.use(express.static('public'));
 
 app.use('/', routes());
 
-app.listen(parseInt(process.env.PORT, 10) || 3000, () => {
+var server = app.listen(parseInt(process.env.PORT, 10) || 3000, () => {
 	console.log("App running");
 });
+
+module.exports = server;
 
