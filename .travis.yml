@@ -2,10 +2,7 @@ language: node_js
 
 node_js:
  - "9"
-
-env:
- - NODE_ENV="development"
- - NODE_ENV="production"
+ 
 script: npm test
 cache:
   directories:
