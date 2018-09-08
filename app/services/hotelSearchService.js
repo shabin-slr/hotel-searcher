@@ -57,7 +57,7 @@ let getHotels = () =>{
                 console.log(err);
                 return reject(err);
             }
-            resolve(body);
+            return resolve(body);
         });
     })
 }
