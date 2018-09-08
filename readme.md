@@ -1,5 +1,6 @@
 
 [![codebeat badge](https://codebeat.co/badges/8529163a-631f-4159-a5ff-27741d76adc8)](https://codebeat.co/projects/github-com-shabin-slr-hotel-searcher-master)
+[![Build Status](https://travis-ci.org/shabin-slr/hotel-searcher.svg?branch=master)](https://travis-ci.org/shabin-slr/hotel-searcher)
 #### An app that allows search in the given inventory by any of the following:
 
 - Hotel Name
