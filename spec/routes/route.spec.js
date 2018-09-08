@@ -40,7 +40,6 @@ describe("Testing routes", function(){
         request.get(base_url+"na", function(error, response, body) {
             console.log(body);
             expect(response.statusCode).toBe(404);
-            expect(response.headers["content-type"]).toContain("application/json");
             done();
         });
     });
