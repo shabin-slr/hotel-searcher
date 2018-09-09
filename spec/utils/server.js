@@ -9,7 +9,7 @@ const makeServer = ()=>{
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(express.static('public'));
     
-    app.use('/', routes());
+    app.use('/', routes);
     
     var server = app.listen(parseInt(process.env.PORT, 10) || 3000, () => {
         console.log("App running");

@@ -40,10 +40,11 @@
     };
     angular.module("tajawal-test").component("hotelSearchFilter",{
         templateUrl : "/app/hotelSearch/components/hotelSearchFilter/hotelSearchFilter.html",
-        controller : HotelSearchFilterController,
+        controller : ['HotelSearchService', HotelSearchFilterController],
         controllerAs : "$ctrl",
         bindings : {
             hotels : '='
         }
-    })
+    });
+    //HotelSearchFilterController.$inject = ['HotelSearchService']
 })();

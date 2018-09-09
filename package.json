@@ -24,9 +24,15 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
+    "angular-mock": "^1.0.0",
+    "angular-mocks": "^1.7.4",
     "bower": "^1.8.4",
     "istanbul": "^0.4.5",
     "jasmine": "^3.2.0",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
     "mock-require": "^3.0.2",
     "nock": "^9.6.1"
   }
