@@ -1,4 +1,4 @@
-
+/* 
 var request = require("request");
 var base_url = "http://localhost:3000/";
 var mock = require('mock-require');
@@ -29,4 +29,4 @@ describe("Testing hoteSearchController", function(){
             server.close(done);
         });
     });
-});
+}); */
