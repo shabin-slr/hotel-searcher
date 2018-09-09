@@ -29,12 +29,11 @@ npm install
 - Run Backend unit tests
 ```
 npm test
-
+```
 - Run front-end unit tests
 ```
 npm test-frontend
 ```
-
 - Run Coverage
 ```
 npm run coverage
