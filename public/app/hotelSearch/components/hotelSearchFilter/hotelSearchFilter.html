@@ -29,13 +29,27 @@
 
                 <label class="sr-only" for="endDate">End Date</label>
                 <div class="input-group mb-2 mr-sm-2">
-                    <input type="text" uib-datepicker-popup="yyyy-MM-dd" class="form-control" id="endDate" placeholder="Start Date" is-open="$ctrl.endDatePicker.isOpen" ng-model="$ctrl.filter.endDate"/>
+                    <input type="text" uib-datepicker-popup="yyyy-MM-dd" class="form-control" id="endDate" placeholder="End Date" is-open="$ctrl.endDatePicker.isOpen" ng-model="$ctrl.filter.endDate"/>
                     <div class="input-group-append">
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-default" ng-click="$ctrl.endDatePicker.isOpen=!$ctrl.endDatePicker.isOpen"><i class="far fa-calendar-alt"></i></button>
                         </span>
                     </div>
                 </div>
+
+                <label class="sr-only" for="sortBy">Sort By</label>
+                <select class="form-control mb-2 mr-sm-2" id="sortBy" placeholder="Sort By" ng-model="$ctrl.filter.sortBy">
+                    <option value="">---Sort By---</option>
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                </select>
+
+                <label class="sr-only" for="sortOrder">Sort Order</label>
+                <select class="form-control mb-2 mr-sm-2" id="sortOrder" placeholder="Sort Order" ng-model="$ctrl.filter.sortOrder">
+                    <option value="">---Sort Order---</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
                 
                 <button type="submit" class="btn btn-primary mb-2 mr-sm-2" ng-click="$ctrl.searchHotels()">Submit</button>
 

@@ -36,6 +36,20 @@ let filterResult = (hotels, filter) => {
                 return !!available?true :false
             });
         }
+        if(filter.sortBy === "name"){
+            if(filter.sortOrder==="ascending"){
+                hotels.sort((a,b)=>a.name>b.name);
+            } else {
+                hotels.sort((a,b)=>b.name>a.name);
+            }
+        }
+        if(filter.sortBy === "price"){
+            if(filter.sortOrder === "ascending"){
+                hotels.sort((a,b)=>a.price-b.price);
+            } else {
+                hotels.sort((a,b)=>b.price-a.price);
+            }
+        }
     }
     return hotels;
 };

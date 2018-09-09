@@ -4,6 +4,9 @@
 .padding10px{
     padding: 10px;
 }
+.middle th tr {
+    vertical-align: middle !important;
+}
 
 /* .glyphicon {
     position: relative;

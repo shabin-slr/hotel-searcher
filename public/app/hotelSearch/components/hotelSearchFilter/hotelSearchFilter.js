@@ -29,6 +29,9 @@
             } */
             this.HotelSearchService.findHotels(this.filter)
             .then(data=>{
+                /* data.data.forEach(hotel=>{
+                    hotel.availability = hotel.availability.map(x=>x.from+' to '+x.to).join(', ')
+                }) */
                 this.hotels = data.data;
             })
         };
