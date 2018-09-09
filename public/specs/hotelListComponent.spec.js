@@ -4,9 +4,8 @@ describe("testing hotelSearchComponent", ()=>{
     beforeEach(module('tajawal-test'));
 
     beforeEach(inject(function(_$componentController_){
-        
         $componentController = _$componentController_;
-      }));
+    }));
 
     it("should initialize hotels array from binding", function(done){
         var $ctrl = $componentController('hotelList', null, {
