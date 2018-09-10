@@ -69,6 +69,7 @@ After running the server, ping the URL  <a href="http://localhost:3000/search" t
 
 Allowed query parameters are
 - name
+- city
 - startPrice
 - endPrice
 - startDate (yyyy-MM-dd, eg: 2020-10-11)
