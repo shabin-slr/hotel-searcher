@@ -42,7 +42,7 @@ npm test
 
 ## Run front-end unit tests
 ```
-npm test-frontend
+npm run test-frontend
 ```
 
 ## Get Coverage Report
