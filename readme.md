@@ -15,6 +15,20 @@ and allow sorting by:
 - Hotel Name
 - Price
 
+### ADirectory layout
+
+    .
+    ├── app                     # Backend Code
+    ├── specs                   # Backend Specs
+    ├── public                  # Frontend Code
+    |   L specs                 # Frontend Specs
+    ├── travis.yml              # Config for Travis CI
+    ├── bower.json              # Front end dependencies
+    ├── karma.conf.js           # Config for Karma Test Runner
+    ├── package.json            # Project dependencies
+    ├── README.md               
+    └── server.js               # entry point
+
 ####  Stack
 - Angular : v1.7.3
 - NodeJS : v9.11.2
