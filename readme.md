@@ -51,8 +51,8 @@ npm run coverage
 ```
 
 ## Use Rest endpoint directly
-Ping the URL  <a href="http://localhost:3000/search" target="_blank">http://localhost:3000/search</a> 
-from a tool like Postman or even directly from browser
+After running the server, ping the URL  <a href="http://localhost:3000/search" target="_blank">http://localhost:3000/search</a> from a tool like Postman or even directly from browser.
+
 Allowed query parameters are
 - name
 - startPrice
