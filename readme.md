@@ -26,6 +26,13 @@ and allow sorting by:
 ```
 npm install
 ```
+- Start Application
+```
+npm start
+```
+Server will start on port 3000 in localhost
+Got to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to see the app running
+
 - Run Backend unit tests
 ```
 npm test
