@@ -15,7 +15,7 @@ and allow sorting by:
 - Hotel Name
 - Price
 
-### ADirectory layout
+### Directory layout
 
     .
     ├── app                     # Backend Code
