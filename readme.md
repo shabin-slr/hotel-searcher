@@ -34,7 +34,7 @@ npm test
 ```
 npm test-frontend
 ```
-- Run Coverage
+- Get Coverage Report
 ```
 npm run coverage
 ```
