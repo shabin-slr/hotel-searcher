@@ -22,12 +22,12 @@ and allow sorting by:
 - Code Quality : Codebeat  [![codebeat badge](https://codebeat.co/badges/8529163a-631f-4159-a5ff-27741d76adc8)](https://codebeat.co/projects/github-com-shabin-slr-hotel-searcher-master) 
 
 #### Getting Started
-Install dependencies
+## Install dependencies
 ```
 npm install
 ```
 
-Start Application
+## Start Application
 ```
 npm start
 ```
@@ -35,22 +35,22 @@ Server will start on port 3000 in localhost
 Got to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a> to see the app running
 
 
-Run Backend unit tests
+## Run Backend unit tests
 ```
 npm test
 ```
 
-Run front-end unit tests
+## Run front-end unit tests
 ```
 npm test-frontend
 ```
 
-Get Coverage Report
+## Get Coverage Report
 ```
 npm run coverage
 ```
-Use Rest endpoint directly
 
+## Use Rest endpoint directly
 Ping the URL  <a href="http://localhost:3000/search" target="_blank">http://localhost:3000/search</a> 
 from a tool like Postman or even directly from browser
 Allowed query parameters are
