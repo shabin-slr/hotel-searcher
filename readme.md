@@ -1,4 +1,4 @@
-Test App with NoodeJS, Express, AngularJS, Jasmine, Karma, Travis-CI, CodeMate
+Test App with NodeJS, Express, AngularJS, Jasmine, Karma, Travis-CI, CodeMate
 ==============================================================================
 
 [![codebeat badge](https://codebeat.co/badges/8529163a-631f-4159-a5ff-27741d76adc8)](https://codebeat.co/projects/github-com-shabin-slr-hotel-searcher-master)
