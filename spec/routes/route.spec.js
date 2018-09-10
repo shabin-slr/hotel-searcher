@@ -29,7 +29,6 @@ describe("Testing routes", function(){
     
     it('should responds to /search with json', function(done) {
         request.get(base_url+"search", function(error, response, body) {
-            console.log(body);
             expect(response.statusCode).toBe(200);
             expect(response.headers["content-type"]).toContain("application/json");
             done();
@@ -38,7 +37,6 @@ describe("Testing routes", function(){
 
     it('should responds to any other route with 404', function(done) {
         request.get(base_url+"na", function(error, response, body) {
-            console.log(body);
             expect(response.statusCode).toBe(404);
             done();
         });

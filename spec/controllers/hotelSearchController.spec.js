@@ -9,7 +9,6 @@ describe("Testing hoteSearchController", function(){
     it('should call handleSearchRequest() on GET /search', function(done) {
         mockHandle = {
             handleSearchRequest : (req, res) => {
-                console.log("Original called");
                 res.send([])
             }
         };

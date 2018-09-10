@@ -12,7 +12,6 @@ const makeServer = ()=>{
     app.use('/', routes);
     
     var server = app.listen(parseInt(process.env.PORT, 10) || 3000, () => {
-        console.log("App running");
     });
     return server;
 };
